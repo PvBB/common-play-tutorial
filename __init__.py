@@ -5,10 +5,8 @@ from mycroft.util.parse import match_one
 
 track_dict = {
     'sky radio': 'http://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3',
-    'druid': 'http://remix.kwed.org/files/RKOfiles/Revel%20Craft%20-%20Druid.mp3',
-    'crazy comets':  'http://remix.kwed.org/files/RKOfiles/Makke%20-%20Crazy%20Comets%20(Komet%20Non-Stop).mp3',
-    'boulder dash': 'http://remix.kwed.org/files/RKOfiles/Mahoney%20-%20BoulderDash%20(Commodore%2069%20mix).mp3',
-    'garfield': 'http://remix.kwed.org/files/RKOfiles/Reyn%20Ouwehand%20-%20Garfield.mp3'
+    'sublime FM': 'http://stream.sublimefm.nl/SublimeFM_mp3',
+    'radio veronica':  'http://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3'
 }
 
 
