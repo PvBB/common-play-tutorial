@@ -5,7 +5,6 @@ from mycroft.util.parse import match_one
 
 track_dict = {
     'sky radio': 'http://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3',
-    'sublime FM': 'http://stream.sublimefm.nl/SublimeFM_mp3',
     'radio veronica':  'http://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3'
 }
 
