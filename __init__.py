@@ -4,7 +4,7 @@ from mycroft.util.parse import match_one
 
 
 track_dict = {
-    'bomb jack': 'http://remix.kwed.org/files/RKOfiles/Chronblom%20-%20Bomb%20Jack%20subtune%206%20(violin%20version).mp3',
+    'sky radio': 'http://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3',
     'druid': 'http://remix.kwed.org/files/RKOfiles/Revel%20Craft%20-%20Druid.mp3',
     'crazy comets':  'http://remix.kwed.org/files/RKOfiles/Makke%20-%20Crazy%20Comets%20(Komet%20Non-Stop).mp3',
     'boulder dash': 'http://remix.kwed.org/files/RKOfiles/Mahoney%20-%20BoulderDash%20(Commodore%2069%20mix).mp3',
