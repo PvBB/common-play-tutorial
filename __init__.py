@@ -22,6 +22,10 @@ track_dict = {
 
 
 class InternetRadioSkill(CommonPlaySkill):
+    def __init__(self):
+        self.ducking = False
+        self.idle_count = 0
+        
     def CPS_match_query_phrase(self, phrase):
         """ This method responds wether the skill can play the input phrase.
 
@@ -55,12 +59,13 @@ class InternetRadioSkill(CommonPlaySkill):
         self.audioservice.play(url)
         
     #### implement audio ducking
+
     def handle_listener_started(self, message):
         """ Handle auto ducking when listener is started.
-        The ducking is enabled/disabled using the skill settings on home.
+       
         TODO: Evaluate the Idle check logic
         """
-        if self.audioservice.is_playing():
+        if self.audioservice._track_info():
             self.__pause()
             self.ducking = True
 
