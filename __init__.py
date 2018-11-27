@@ -23,7 +23,11 @@ class TutorialSkill(CommonPlaySkill):
         # Get match and confidence
         match, confidence = match_one(phrase, track_dict)
         # If the confidence is high enough return a match
-        if confidence > 0.5:
+        if confidence > 0.9:
+            return (match, CPSMatchLevel.EXACT, {"track": match})
+        elif confidence > 0.7:
+            return (match, CPSMatchLevel.MULTI_KEY, {"track": match})
+        elif confidence > 0.5:
             return (match, CPSMatchLevel.TITLE, {"track": match})
         # Otherwise return None
         else:
